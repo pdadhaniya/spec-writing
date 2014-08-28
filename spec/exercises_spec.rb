@@ -52,4 +52,12 @@ describe "Exercises" do
 		end
 	end
 
+	describe ".ex5" do
+		it "should puts each element of an array" do 
+			STDOUT.should_receive(:puts).with("Hello")
+			STDOUT.should_receive(:puts).with("There")
+			Exercises.ex5(["Hello", "There"])
+		end
+	end
+
 end
