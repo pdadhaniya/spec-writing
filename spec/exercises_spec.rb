@@ -33,4 +33,14 @@ describe "Exercises" do
 			expect(result).to eq(3)
 		end
 	end
+
+	describe ".ex3" do
+		it "should return the sum of an array" do
+			result = Exercises.ex3([1, 2, 3, 4, 5])
+			expect(result).to eq(15)
+			result = Exercises.ex3([14, 16])
+			expect(result).to eq(30)
+		end
+	end
+
 end
