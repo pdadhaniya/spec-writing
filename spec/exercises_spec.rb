@@ -43,4 +43,13 @@ describe "Exercises" do
 		end
 	end
 
+	describe ".ex4" do
+		it "should return the max number of an array" do
+			result = Exercises.ex4([1, 4, 9, 16])
+			expect(result).to eq(16)
+			result = Exercises.ex4([64, 36, 16, 9])
+			expect(result).to eq(64)
+		end
+	end
+
 end
