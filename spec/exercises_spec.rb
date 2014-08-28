@@ -60,4 +60,11 @@ describe "Exercises" do
 		end
 	end
 
+	describe ".ex6" do
+		it "should update last element in array to 'panda" do
+			result = Exercise.ex6(["hello", "there", "parag"])
+			expect(result).to eq("panda")
+		end
+	end
+
 end
