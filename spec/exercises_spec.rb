@@ -15,4 +15,14 @@ describe "Exercises" do
 			expect(result).to eq("nope")
 		end
 	end
+
+	describe ".ex1" do
+		it "should return the number of elements in the array"
+			result = Exercises.ex1([1,2,3,4,5])
+			expect(result).to eq(5)
+			result = Exercises.ex1([1,2,3,4,5,6,7])
+			expect(result).to eq(7)
+		end
+		
+	end
 end
