@@ -17,12 +17,20 @@ describe "Exercises" do
 	end
 
 	describe ".ex1" do
-		it "should return the number of elements in the array"
+		it "should return the number of elements in the array" do
 			result = Exercises.ex1([1,2,3,4,5])
 			expect(result).to eq(5)
 			result = Exercises.ex1([1,2,3,4,5,6,7])
 			expect(result).to eq(7)
 		end
-		
+	end
+
+	describe ".ex2" do
+		it "should return the second element in the array" do
+			result = Exercises.ex2([2, 4, 6, 8, 10])
+			expect(result).to eq(4)
+			result = Exercises.ex2([1,3,5,7,9,11])
+			expect(result).to eq(3)
+		end
 	end
 end
