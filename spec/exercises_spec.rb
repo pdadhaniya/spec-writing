@@ -72,4 +72,9 @@ describe "Exercises" do
 		end
 	end
 
+	describe ".ex7" do
+		it "should add a string to the end of an array if the array already contains the string" do
+			result = Exercises.ex7(["my", "name", "is", "parag"], "name")
+			expect(result).to eq("name")
+
 end
