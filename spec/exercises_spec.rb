@@ -76,5 +76,18 @@ describe "Exercises" do
 		it "should add a string to the end of an array if the array already contains the string" do
 			result = Exercises.ex7(["my", "name", "is", "parag"], "name")
 			expect(result).to eq("name")
+		end
+	end
+
+	describe ".ex8" do
+		it "should print out the name and occupation of each person in the hash" do
+			bob = { :name => "Bob", :occupation => "Builder" },
+			carlos = { :name => "Carlos", :occupation => "Lawyer" }	
+			people = [bob, carlos]
+			STDOUT.should_receive(:print).with("Bob Builder")
+			STDOUT.should_receive(:print).with("Carlos Lawyer")
+			Exercises.ex8(people)
+		end
+	end
 
 end
