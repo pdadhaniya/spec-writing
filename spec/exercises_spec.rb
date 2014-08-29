@@ -69,6 +69,7 @@ describe "Exercises" do
 		it "should update the last item to 'GODZILLA' if last item is 'panda'" do
 			result = Exercises.ex6(["i", "am", "a", "panda"])
 			expect(result).to eq("GODZILLA")
+		end
 	end
 
 end
