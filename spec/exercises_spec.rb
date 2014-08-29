@@ -91,10 +91,15 @@ describe "Exercises" do
 	end
 
 	describe ".ex9" do
-		it "should return happy hour if the time is in a leap year" do
+		it "should return true if the year is a leap year" do
+			result = Exercises.ex9(2012)
+			expect(result).to eq(true)
+		end	
+
+		it "should return false if the year is not a leap year" do
 			result = Exercises.ex9(2014)
 			expect(result).to eq(false)
-		end	
+		end
 	end
 
 end
