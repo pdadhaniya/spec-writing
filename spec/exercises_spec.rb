@@ -82,10 +82,10 @@ describe "Exercises" do
 	describe ".ex8" do
 		it "should print out the name and occupation of each person in the hash" do
 			people = [ { :name => "Bob", :occupation => "Builder" }, { :name => "Carlos", :occupation => "Lawyer" }]
-			STDOUT.should_receive(:print).with("Bob")
-			STDOUT.should_receive(:print).with("Builder")
-			STDOUT.should_receive(:print).with("Carlos")
-			STDOUT.should_receive(:print).with("Lawyer")
+			STDOUT.should_receive(:puts).with("Bob")
+			STDOUT.should_receive(:puts).with("Builder")
+			STDOUT.should_receive(:puts).with("Carlos")
+			STDOUT.should_receive(:puts).with("Lawyer")
 			Exercises.ex8(people)
 		end
 	end
